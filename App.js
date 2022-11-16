@@ -65,7 +65,7 @@ const Section = ({ children, title }) => {
 const App = () => {
   const openEditor = () => {
     // Set up sample video
-    let video = require('./assets/Skater.mp4');
+    let video = require('./assets/DJ.mp4');
     // Set up configuration
     let configuration: Configuration = {
       // Configure sticker tool
@@ -124,6 +124,10 @@ const App = () => {
               {
                 identifier: "example_video_custom_notes",
                 videoURI: require('./assets/Notes.mp4')
+              },
+              {
+                identifier: "example_video_custom_skater",
+                videoURI: require('./assets/Skater.mp4')
               },
             ]
           }
